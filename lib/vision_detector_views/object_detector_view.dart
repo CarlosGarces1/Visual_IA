@@ -3,6 +3,7 @@ import 'dart:io' as io;
 import 'package:camera/camera.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_tts/flutter_tts.dart';
 import 'package:google_mlkit_object_detection/google_mlkit_object_detection.dart';
 import 'package:path/path.dart';
 import 'package:path_provider/path_provider.dart';
@@ -17,6 +18,7 @@ class ObjectDetectorView extends StatefulWidget {
 
 class _ObjectDetectorView extends State<ObjectDetectorView> {
   late ObjectDetector _objectDetector;
+  final FlutterTts flutterTts = FlutterTts();
   bool _canProcess = false;
   bool _isBusy = false;
   CustomPaint? _customPaint;
@@ -101,6 +103,12 @@ class _ObjectDetectorView extends State<ObjectDetectorView> {
     _canProcess = true;
   }
 
+  speak(String text) async {
+    await flutterTts.setLanguage("en-US");
+    await flutterTts.setPitch(1);
+    await flutterTts.speak(text);
+  }
+
   Future<void> processImage(InputImage inputImage) async {
     if (!_canProcess) return;
     if (_isBusy) return;
@@ -117,12 +125,15 @@ class _ObjectDetectorView extends State<ObjectDetectorView> {
           inputImage.inputImageData!.size);
       _customPaint = CustomPaint(painter: painter);
     } else {
-      String text = 'Objects found: ${objects.length}\n\n';
+      String text = 'Objetos encontrados: ${objects.length}\n\n';
+
       for (final object in objects) {
-        text +=
-            'Object:  trackingId: ${object.trackingId} - ${object.labels.map((e) => e.text)}\n\n';
+        text += 'Objeto: ${object.labels.map((e) => e.text)}\n\n';
+        print('text');
+        speak("${object.labels.map((e) => e.text)}");
       }
       _text = text;
+      print(_text);
       _customPaint = null;
     }
     _isBusy = false;

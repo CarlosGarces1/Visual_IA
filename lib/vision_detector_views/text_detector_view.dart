@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_tts/flutter_tts.dart';
 import 'package:google_mlkit_text_recognition/google_mlkit_text_recognition.dart';
 
 import 'camera_view1.dart';
@@ -10,6 +11,7 @@ class TextRecognizerView extends StatefulWidget {
 }
 
 class _TextRecognizerViewState extends State<TextRecognizerView> {
+  final FlutterTts flutterTts = FlutterTts();
   final TextRecognizer _textRecognizer =
       TextRecognizer(script: TextRecognitionScript.latin);
   bool _canProcess = true;
@@ -24,8 +26,15 @@ class _TextRecognizerViewState extends State<TextRecognizerView> {
     super.dispose();
   }
 
+  speak(String text) async {
+    await flutterTts.setLanguage("es-CO");
+    await flutterTts.setPitch(1);
+    await flutterTts.speak(text);
+  }
+
   @override
   Widget build(BuildContext context) {
+    // print(flutterTts.getLanguages);
     return CameraView1(
       title: 'Text Detector',
       customPaint: _customPaint,
@@ -52,7 +61,10 @@ class _TextRecognizerViewState extends State<TextRecognizerView> {
           inputImage.inputImageData!.imageRotation);
       _customPaint = CustomPaint(painter: painter);
     } else {
-      _text = 'Recognized text:\n\n${recognizedText.text}';
+      _text = 'Texto reconocido:\n\n${recognizedText.text}';
+      speak(recognizedText.text);
+
+      // print(recognizedText.text);
       _customPaint = null;
     }
     _isBusy = false;

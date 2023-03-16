@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_ml_kit_example/screens/about.dart';
 import 'package:google_ml_kit_example/screens/developers.dart';
 import 'package:google_ml_kit_example/vision_detector_views/text_detector_view.dart';
 
@@ -38,9 +39,7 @@ class _Menu1State extends State<Menu1> {
               child: Text('Contactos'),
             ),
             Developers(),
-            Center(
-              child: Text('Acerca de:'),
-            ),
+            AboutPage(),
           ],
           controller: _pageController,
           onPageChanged: (index) {
@@ -60,7 +59,9 @@ class _Menu1State extends State<Menu1> {
                 DrawerHeader(
                   child: Column(
                     children: [
-                      SizedBox(height: 30,),
+                      SizedBox(
+                        height: 30,
+                      ),
                       Image.asset("assets/fotos/logo.png"),
                     ],
                   ),
@@ -98,7 +99,7 @@ class _Menu1State extends State<Menu1> {
                 ),
                 ListTile(
                   title: const Text(
-                    "Contactanos",
+                    "Contáctanos",
                     style: TextStyle(color: Colors.black),
                   ),
                   leading: const Icon(
@@ -154,7 +155,10 @@ class _Menu1State extends State<Menu1> {
           ),
         ),
         appBar: AppBar(
-          title: const Text('Visual IA', style: TextStyle(color: Colors.white),),
+          title: const Text(
+            'Visual IA',
+            style: TextStyle(color: Colors.white),
+          ),
           centerTitle: true,
           backgroundColor: Theme.of(context).primaryColor,
         ),
