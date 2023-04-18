@@ -1,4 +1,4 @@
-package com.google_mlkit_example;
+package com.unipaz.visual_ia;
 
 import io.flutter.embedding.android.FlutterActivity;
 

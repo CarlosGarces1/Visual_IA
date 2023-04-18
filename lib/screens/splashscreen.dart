@@ -1,7 +1,7 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
-import 'package:google_ml_kit_example/screens/b.dart';
+import 'package:google_ml_kit_example/screens/menu.dart';
 
 class SplashScreen extends StatefulWidget {
   @override
@@ -13,12 +13,12 @@ class _SplashScreenState extends State<SplashScreen> {
   void initState() {
     super.initState();
     Timer(
-      Duration(seconds: 5), // Change the duration as per your requirement
+      Duration(seconds: 2), // Change the duration as per your requirement
       () => Navigator.pushReplacement(
         context,
         MaterialPageRoute(
           builder: (context) =>
-              Menu1(), // Replace HomeScreen() with your app's main screen
+              Menu(), // Replace HomeScreen() with your app's main screen
         ),
       ),
     );

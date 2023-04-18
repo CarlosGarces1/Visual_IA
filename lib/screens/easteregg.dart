@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:url_launcher/url_launcher_string.dart';
 
-class AboutPage extends StatelessWidget {
-  const AboutPage({Key? key}) : super(key: key);
+class Easteregg extends StatelessWidget {
+  const Easteregg({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -17,25 +17,13 @@ class AboutPage extends StatelessWidget {
               SizedBox(
                 height: 20,
               ),
-              about('Visual IA',
-                  'IA para el reconocimiento de texto y objetos.', context),
+              about('Felicidades',
+                  'Econtraste un easterEgg', context),
               const Padding(
                 padding:
                     EdgeInsets.only(left: 20.0, top: 2, right: 20.0, bottom: 2),
                 child: Text(
-                  'Es una aplicación desarrollada por estudiantes de 9 semestre de ingeniería informática, en el Instituto Universitario De la Paz-UNIPAZ..',
-                  textAlign: TextAlign.justify,
-                  style: TextStyle(
-                    fontSize: 20,
-                    fontWeight: FontWeight.bold,
-                  ),
-                ),
-              ),
-              const Padding(
-                padding: EdgeInsets.only(
-                    left: 20.0, top: 2, right: 20.0, bottom: 20),
-                child: Text(
-                  'Si notas algún error por favor notificar en el correo: jeferson.rolon@unipaz.edu.co .',
+                  'A continuación podras encontrar todo sobre el aplicativo: ',
                   textAlign: TextAlign.justify,
                   style: TextStyle(
                     fontSize: 20,
@@ -48,7 +36,7 @@ class AboutPage extends StatelessWidget {
                   const Padding(
                     padding: EdgeInsets.all(20.0),
                     child: Text(
-                      'Redes Sociales: ',
+                      'Cosas Extras:      ',
                       textAlign: TextAlign.justify,
                       style: TextStyle(
                         fontSize: 20,
@@ -59,14 +47,14 @@ class AboutPage extends StatelessWidget {
                   Column(
                     children: [
                       redes(
-                          'Facebook',
-                          'https://www.facebook.com/people/Visual-IA-proyecto-App/100091320604919/',
-                          FaIcon(FontAwesomeIcons.facebook),
+                          'Github',
+                          'https://github.com/CarlosGarces1/Visual_IA',
+                          FaIcon(FontAwesomeIcons.github),
                           context),
                       redes(
-                          'Instagram',
-                          'https://www.instagram.com/proyecto_visual_ia/?igshid=ZDdkNTZiNTM%3D',
-                          FaIcon(FontAwesomeIcons.instagram),
+                          'Drive',
+                          'https://drive.google.com/drive/folders/1-1NKwuTASvxJy0Tuj2I_F-USH4m1Y8fz?usp=share_link',
+                          FaIcon(FontAwesomeIcons.hardDrive),
                           context),
                     ],
                   ),
@@ -120,9 +108,7 @@ class AboutPage extends StatelessWidget {
       child: Column(
         children: [
           GestureDetector(
-            onLongPress: () {
-              Navigator.pushNamed(context, 'easteregg');
-            },
+            onLongPress: () {},
             child: Container(
               decoration: const BoxDecoration(
                 shape: BoxShape.circle,

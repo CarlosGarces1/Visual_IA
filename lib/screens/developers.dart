@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:google_ml_kit_example/screens/easteregg.dart';
 import 'package:url_launcher/url_launcher_string.dart';
 
 class Developers extends StatelessWidget {
@@ -9,7 +10,7 @@ class Developers extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
         child: Scaffold(
-      backgroundColor: Theme.of(context).backgroundColor,
+      backgroundColor: Theme.of(context).colorScheme.background,
       body: SingleChildScrollView(
         child: Column(
           children: [
@@ -23,13 +24,13 @@ class Developers extends StatelessWidget {
                 ),
               ),
             ),
-            developer1('assets/fotos/carlos.jpg', 'Carlos Felipe Garcés ',
+            developer1('assets/fotos/carlos.png', 'Carlos Felipe Garcés ',
                 'https://github.com/CarlosGarces1', context),
             const SizedBox(
               height: 20,
             ),
-            developer(
-                'https://lh3.googleusercontent.com/a-/ACB-R5Tm2QxNNklh4JPjCoeRLGjIQ9uGXKovVQ9s414d=s288-p-no',
+            developer4(
+                'assets/fotos/mateo.png',
                 'Miguel Mateo Mont',
                 'Desarrollador BackEnd',
                 'https://github.com/Mateo-Mont',
@@ -37,47 +38,43 @@ class Developers extends StatelessWidget {
             const SizedBox(
               height: 20,
             ),
-            developer(
-                'https://lh3.googleusercontent.com/a-/ACNPEu99cKtFiTdbsIoniKBjaTBakQaSU5OHx-SUY5xm=s288-p-no',
-                'Jesus Raúl Villalobos',
-                'Documentación',
-                'https://github.com/Jeravima',
-                context),
+            developer4('assets/fotos/raul.png', 'Jesus Raúl Villalobos',
+                'Documentación', 'https://github.com/Jeravima', context),
             const SizedBox(
               height: 20,
             ),
-            developer(
-                'https://lh3.googleusercontent.com/a-/ACB-R5TO6Obts563-QfdPnre19mcU4IlFBaq3jFel4iV=s288-p-no',
-                'Ingry Melyssa Olarte',
-                'Documentación',
-                'https://github.com/IngryOlarte',
-                context),
+            developer4('assets/fotos/mely.png', 'Ingry Melyssa Olarte',
+                'Documentación', 'https://github.com/IngryOlarte', context),
             const SizedBox(
               height: 20,
             ),
-            developer2(
-                'https://lh3.googleusercontent.com/a-/ACB-R5TrDdXlLArGzRAEyOzm7hAAvK9Q1qxz3bl6j6pF=s288-p-no',
-                '',
-                context),
+            developer2('assets/fotos/jannios.png', '', context),
             const SizedBox(
               height: 20,
             ),
-            developer4('assets/fotos/jefer.jpg', 'Jeferson Rolón Ochoa',
+            developer4('assets/fotos/jefer.png', 'Jeferson Rolón Ochoa',
                 'Representante', 'https://github.com/jefer15', context),
             const SizedBox(
               height: 20,
             ),
-            developer4('assets/fotos/angel.jpg', 'Angel Manuel Jaimes',
+            developer4('assets/fotos/angel.png', 'Angel Manuel Jaimes',
                 'Representante', 'https://github.com/angeljaimes2001', context),
             const SizedBox(
               height: 20,
             ),
-            developer(
-                'https://lh3.googleusercontent.com/a-/ACB-R5Rx8mrBEpsk5DEDkwc3r5itld09bjpEtLzRGdBZrQ=s288-p-no',
-                'Jhoni Rios',
-                'Director del Proyecto',
-                '',
-                context),
+            GestureDetector(
+              onLongPress: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) =>
+                        Easteregg(), // Replace HomeScreen() with your app's main screen
+                  ),
+                );
+              },
+              child: developer4('assets/fotos/profe.jpg', 'Jhoni Rios',
+                  'Director del Proyecto', '', context),
+            ),
             const SizedBox(
               height: 20,
             ),
@@ -99,8 +96,8 @@ class Developers extends StatelessWidget {
             ),
             child: ClipOval(
               child: Container(
-                color: Colors.white,
-                child: Image.network(
+                color: Colors.transparent,
+                child: Image.asset(
                   image,
                   width: 140,
                   height: 140,
@@ -165,12 +162,12 @@ class Developers extends StatelessWidget {
             ),
             child: ClipOval(
               child: Container(
-                color: Colors.white,
+                color: Colors.transparent,
                 child: Image.asset(
                   image,
                   width: 140,
                   height: 140,
-                  fit: BoxFit.cover,
+                  fit: BoxFit.fill,
                 ),
               ),
             ),
@@ -234,7 +231,7 @@ class Developers extends StatelessWidget {
             ),
             child: ClipOval(
               child: Container(
-                color: Colors.white,
+                color: Colors.transparent,
                 child: Image.asset(
                   image,
                   width: 140,

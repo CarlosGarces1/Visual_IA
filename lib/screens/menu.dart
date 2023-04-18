@@ -5,14 +5,14 @@ import 'package:google_ml_kit_example/vision_detector_views/text_detector_view.d
 
 import '../vision_detector_views/object_detector_view.dart';
 
-class Menu1 extends StatefulWidget {
-  Menu1({Key? key}) : super(key: key);
+class Menu extends StatefulWidget {
+  Menu({Key? key}) : super(key: key);
 
   @override
-  State<Menu1> createState() => _Menu1State();
+  State<Menu> createState() => _MenuState();
 }
 
-class _Menu1State extends State<Menu1> {
+class _MenuState extends State<Menu> {
   final PageController _pageController = PageController(
     initialPage: 0,
   );
@@ -26,7 +26,6 @@ class _Menu1State extends State<Menu1> {
 
   @override
   Widget build(BuildContext context) {
-    // final media = MediaQuery.of(context).size;
     return SafeArea(
       child: Scaffold(
         backgroundColor: Colors.white,
@@ -35,9 +34,6 @@ class _Menu1State extends State<Menu1> {
           children: [
             ObjectDetectorView(),
             TextRecognizerView(),
-            Center(
-              child: Text('Contactos'),
-            ),
             Developers(),
             AboutPage(),
           ],
@@ -99,20 +95,6 @@ class _Menu1State extends State<Menu1> {
                 ),
                 ListTile(
                   title: const Text(
-                    "Contáctanos",
-                    style: TextStyle(color: Colors.black),
-                  ),
-                  leading: const Icon(
-                    Icons.map,
-                    color: Colors.black,
-                  ),
-                  onTap: () {
-                    Navigator.pop(context);
-                    _pageController.jumpToPage(_selectedIndex = 2);
-                  },
-                ),
-                ListTile(
-                  title: const Text(
                     "Desarrolladores",
                     style: TextStyle(color: Colors.black),
                   ),
@@ -122,7 +104,7 @@ class _Menu1State extends State<Menu1> {
                   ),
                   onTap: () {
                     Navigator.pop(context);
-                    _pageController.jumpToPage(_selectedIndex = 3);
+                    _pageController.jumpToPage(_selectedIndex = 2);
                   },
                 ),
                 ListTile(
@@ -136,20 +118,9 @@ class _Menu1State extends State<Menu1> {
                   ),
                   onTap: () {
                     Navigator.pop(context);
-                    _pageController.jumpToPage(_selectedIndex = 4);
+                    _pageController.jumpToPage(_selectedIndex = 3);
                   },
                 ),
-                // ListTile(
-                //   title: const Text(
-                //     "Modo Oscuro",
-                //     style: TextStyle(color: Colors.black),
-                //   ),
-                //   leading: const Icon(
-                //     Icons.nightlight_round,
-                //     color: Colors.black,
-                //   ),
-                //   onTap: () {},
-                // )
               ],
             ),
           ),
