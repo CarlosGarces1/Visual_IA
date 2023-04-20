@@ -7,7 +7,15 @@ Visual_IA es una aplicación móvil de inteligencia artificial diseñada para br
 ## Descripción
 La aplicación utiliza algoritmos de aprendizaje automático para adaptar la interfaz de usuario a las preferencias y necesidades del usuario. De esta manera, la aplicación puede ofrecer una experiencia visual personalizada que se adapte a la forma en que el usuario utiliza la aplicación.
 
-Visual_IA es una aplicación móvil disponible para dispositivos Android y iOS, y está disponible en español.
+Por lo tanto, este proyecto tiene como fin el desarrollar una aplicación móviles con tecnología de reconocimiento de objetos y texto a voz que sean efectivas y accesibles para las personas con problemas visuales, superando los desafíos técnicos y de usabilidad actuales y mejorando su calidad de vida y autonomía.
+
+Visual_IA es una aplicación móvil disponible para dispositivos Android , y está disponible en español.
+
+## Pantallazos
+
+A continuación podras ver la version final del aplicativo:
+
+<image src="https://play-lh.googleusercontent.com/Pu9v-KwEiHyyR8F0M4ifJdUCNt3MfM5_dLLSaBVQb8ehKloHZc48ZJIFOZsRXT8Q_w=w2560-h1440-rw" alt="Descripción de la imagen" width="421" height="912"> <image src="https://play-lh.googleusercontent.com/GQCPzQDaR8Q7z4TJhAxLqUMbLpcjsIiQw354ehdVLUJ6I7fPoXEnocSkM79fwYUMORY=w2560-h1440-rw" alt="Descripción de la imagen" width="421" height="912"> 
 
 ## Funcionalidades
 Entre las funcionalidades que ofrece la aplicación, se encuentran:
@@ -19,8 +27,8 @@ Interfaz de usuario intuitiva y fácil de usar.
 
 ## Documentación
 Este es un proyecto investigativo realizado en el materia Ingeniería del conocimiento. Si deseas conocer más acerca de la investigación que se llevó a cabo puedes consultar en estos links:
--Ficha tecnica: Ver [Ficha tecnica]( https://docs.google.com/document/d/1qDZUNDWtizJ-KCHjcDqS1VQRR9YePZ5P/edit?usp=sharing&ouid=102490290992905696508&rtpof=true&sd=true )
--Investigación: Ver [Investigación]( https://docs.google.com/document/d/1HwqkCI3pvslnaa7lfeO7kHCINZ5e0FWe/edit?usp=sharing&ouid=102490290992905696508&rtpof=true&sd=true )
+- Ficha tecnica: Ver [Ficha tecnica]( https://docs.google.com/document/d/1qDZUNDWtizJ-KCHjcDqS1VQRR9YePZ5P/edit?usp=sharing&ouid=102490290992905696508&rtpof=true&sd=true )
+- Investigación: Ver [Investigación]( https://docs.google.com/document/d/1HwqkCI3pvslnaa7lfeO7kHCINZ5e0FWe/edit?usp=sharing&ouid=102490290992905696508&rtpof=true&sd=true )
 
 
 ## Instalación
@@ -73,7 +81,16 @@ Reportando errores o problemas a través de la sección de problemas de GitHub.
 ## Créditos
 Visual_IA fue desarrollada por los estudiantes de IX semestre de ingeneria informatica del instituto universitario de la paz-UNIPAZ.
 
-![screenshot.png](https://raw.githubusercontent.com/CarlosGarces1/Visual_IA/main/imagen_2023-04-20_002011921.png)  
+![screenshot.png](https://raw.githubusercontent.com/CarlosGarces1/Visual_IA/main/imagen_2023-04-20_002011921.png) 
+ 
+- Lider del proyecto Jhonny Rios Correo: jhoni.rios@unipaz.edu.co  
+- Diseñador [Jannios Morales]( https://github.com/janiuscrack ) 
+- Producción y Codificación [Miguel Mateo Mont ]( https://github.com/MateoMontLopez ) y [ Carlos Felipe Garcés]( https://github.com/CarlosGarces1 )
+- Redes Sociales y Presentación [Jeferson Rolón ]( https://github.com/jefer15 ) y [ Angel Jaimes]( https://github.com/angeljaimes2001 )
+- Documentación [Ingry Olarte ]( https://github.com/IngryOlarte ) y [ Jesus Villalobos]( https://github.com/Jeravima )
+
+ 
+ 
 
 ## Licencia
 Visual_IA está disponible bajo la licencia MIT. Consulta el archivo LICENSE.md ( Ver [Politicas del aplicativo]( https://github.com/CarlosGarces1/visual_ia_politics/blob/main/privacy-politics.md ) ) para obtener más detalles.
