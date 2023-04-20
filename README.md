@@ -83,11 +83,11 @@ Visual_IA fue desarrollada por los estudiantes de IX semestre de ingeneria infor
 
 ![screenshot.png](https://raw.githubusercontent.com/CarlosGarces1/Visual_IA/main/imagen_2023-04-20_002011921.png) 
  
-- Lider del proyecto Jhonny Rios Correo: jhoni.rios@unipaz.edu.co  
-- Diseñador [Jannios Morales]( https://github.com/janiuscrack ) 
-- Producción y Codificación [Miguel Mateo Mont ]( https://github.com/MateoMontLopez ) y [ Carlos Felipe Garcés]( https://github.com/CarlosGarces1 )
-- Redes Sociales y Presentación [Jeferson Rolón ]( https://github.com/jefer15 ) y [ Angel Jaimes]( https://github.com/angeljaimes2001 )
-- Documentación [Ingry Olarte ]( https://github.com/IngryOlarte ) y [ Jesus Villalobos]( https://github.com/Jeravima )
+- Lider del proyecto: Jhonny Rios jhoni.rios@unipaz.edu.co  
+- Diseñador: [Jannios Morales]( https://github.com/janiuscrack ) 
+- Producción y Codificación: [Miguel Mateo Mont ]( https://github.com/MateoMontLopez ) y [ Carlos Felipe Garcés]( https://github.com/CarlosGarces1 )
+- Redes Sociales y Presentación: [Jeferson Rolón ]( https://github.com/jefer15 ) y [ Angel Jaimes]( https://github.com/angeljaimes2001 )
+- Documentación: [Ingry Olarte ]( https://github.com/IngryOlarte ) y [ Jesus Villalobos]( https://github.com/Jeravima )
 
  
  
