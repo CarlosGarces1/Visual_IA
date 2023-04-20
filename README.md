@@ -17,6 +17,12 @@ Integración con servicios en línea para ofrecer recomendaciones personalizadas
 Compatibilidad con una amplia variedad de dispositivos móviles.
 Interfaz de usuario intuitiva y fácil de usar.
 
+## Documentación
+Este es un proyecto investigativo realizado en el materia Ingeniería del conocimiento. Si deseas conocer más acerca de la investigación que se llevó a cabo puedes consultar en estos links:
+-Ficha tecnica: Ver [Ficha tecnica]( https://docs.google.com/document/d/1qDZUNDWtizJ-KCHjcDqS1VQRR9YePZ5P/edit?usp=sharing&ouid=102490290992905696508&rtpof=true&sd=true )
+-Investigación: Ver [Investigación]( https://docs.google.com/document/d/1HwqkCI3pvslnaa7lfeO7kHCINZ5e0FWe/edit?usp=sharing&ouid=102490290992905696508&rtpof=true&sd=true )
+
+
 ## Instalación
 
 ### Desde las tiendas 
